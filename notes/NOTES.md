@@ -22,3 +22,16 @@
 
  
 
+
+
+---
+
+ 
+
+## Kotlin 팁
+
+#### Iterator
+
+- `Iterator.forEachRemaining{ ... code }` 
+  - 이터레이터를 각각 돌면서 정해진 작업을 수행
+  - 반복적 자료형에 대해 `~~.asIterator().forEachRemaining{    }` 와 같이 사용 가능
