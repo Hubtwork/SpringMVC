@@ -8,6 +8,10 @@ import javax.servlet.http.HttpServlet
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
+
+/**
+ *  URL : http://localhost:8080/request-header
+ */
 @WebServlet(name = "requestHeaderServlet", urlPatterns = ["/request-header"])
 class RequestHeaderServlet: HttpServlet() {
 
