@@ -45,5 +45,47 @@
 
 
 
+### Reference
+
+- https://jongqui.tistory.com/9
+- https://docs.oracle.com/javaee/6/api/javax/servlet/ServletRequest.html#getParameter(java.lang.String)
+
+
+
+---
+
+
+
+### ( Spring ) Kotlin 으로 ObjectMapper 사용 시 오류
+
+#### 21. 08.24 - `kotlin, SpringMVC, Jackson`
+
+
+
+#### 문제 상황
+
+- 서블릿 요청을 통해 받은 `json 데이터` 를 **ObjectMapper.mapper** 를 이용해 **data class** 로 변환 시도, 아래와 같은 오류와 함께 변환이 안 됨
+
+  ~~~kotlin
+  com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `hubtwork.study.springmvc.servlets.data.User` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+  ~~~
+
+
+
+#### 문제 분석
+
+- **ObjectMapper** 의 경우 생성자 기반으로 Deserialize 를 진행해 데이터를 매핑하는데, `data class` 의 경우 생성자가 없어 위와 같은 오류 발생
+
+- **Jackson** 의 Kotlin 모듈에서 `jacksonObjectMapper` 를 대신 이용해 해결할 수 있음
+
+  ~~~kotlin
+  import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+  ...
+  val mapper = jacksonObjectMapper()
+  val user: User = mapper.readValue(message, User::class.java)
+  ~~~
+
+
+
 ---
 
