@@ -1,4 +1,4 @@
-package hubtwork.study.springmvc.servlets.request
+package hubtwork.study.springmvc.servlets.response
 
 import javax.servlet.annotation.WebServlet
 import javax.servlet.http.Cookie
@@ -35,11 +35,17 @@ class ResponseHeaderServlet: HttpServlet() {
     }
 
     private fun setContent(response: HttpServletResponse) {
+        /**
+         *  Content-Type : text/plain
+         *  Content-Length : 2
+         *  response.contentLength = 2 ( 생략시 자동 생성 )
+         */
         response.contentType = "text/plain"
         response.characterEncoding = "utf-8"
     }
 
     private fun setCookie(response: HttpServletResponse) {
+        // response.setHeader("Set-Cookie", "myCookie=good; Max-Age=600")
         var cookie = Cookie("cookie", "")
         cookie.maxAge = 600
         response.addCookie(cookie)
