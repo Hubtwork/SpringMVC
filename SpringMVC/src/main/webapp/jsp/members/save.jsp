@@ -12,7 +12,7 @@
   //request, response 사용 가능
   MemberRepository memberRepository = MemberRepository.Companion.getInstance();
 
-  System.out.println("MemberSaveServlet.service");
+  System.out.println("save.jsp");
   String username = request.getParameter("username");
   int age = Integer.parseInt(request.getParameter("age"));
 
@@ -31,6 +31,6 @@
       <li>username=<%=member.getUserName()%></li>
       <li>age=<%=member.getAge()%></li>
     </ul>
-    <a href="/index.html">메인</a>
+    <a href="/jsp/members.jsp"> 회원 등록 목록으로</a>
   </body>
 </html>
