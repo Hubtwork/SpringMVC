@@ -1,4 +1,4 @@
-package hubtwork.study.springmvc.servlet
+package hubtwork.study.springmvc.servlet.basic
 
 import hubtwork.study.springmvc.data.Member
 import hubtwork.study.springmvc.repository.MemberRepository
