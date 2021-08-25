@@ -18,8 +18,8 @@ class MvcMemberListServlet: HttpServlet() {
 
             request.setAttribute("members", memberList)
 
-            val urlPath = "/WEB-INF/views/members.jsp"
-            val dispatcher = request.getRequestDispatcher(urlPath)
+            val viewPath = "/WEB-INF/views/members.jsp"
+            val dispatcher = request.getRequestDispatcher(viewPath)
             dispatcher.forward(request, response)
         }
     }

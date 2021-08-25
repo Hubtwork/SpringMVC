@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
-@WebServlet(name = "mvcMemberSaveServlet", urlPatterns = ["/servlet-mvc/member/save"])
+@WebServlet(name = "mvcMemberSaveServlet", urlPatterns = ["/servlet-mvc/members/save"])
 class MvcMemberSaveServlet: HttpServlet() {
 
     private val memberRepository = MemberRepository.instance
