@@ -1,8 +1,8 @@
-package hubtwork.study.springmvc.servlets.request
+package hubtwork.study.springmvc.basics.request
 
-import hubtwork.study.springmvc.servlets.util.HttpRequestUtil.extractHeader
-import hubtwork.study.springmvc.servlets.util.HttpRequestUtil.extractRequestInfo
-import hubtwork.study.springmvc.servlets.util.HttpRequestUtil.utilizedHeader
+import hubtwork.study.springmvc.basics.util.HttpRequestUtil.extractHeader
+import hubtwork.study.springmvc.basics.util.HttpRequestUtil.extractRequestInfo
+import hubtwork.study.springmvc.basics.util.HttpRequestUtil.utilizedHeader
 import javax.servlet.annotation.WebServlet
 import javax.servlet.http.HttpServlet
 import javax.servlet.http.HttpServletRequest

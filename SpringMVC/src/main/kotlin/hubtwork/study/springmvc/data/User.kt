@@ -1,4 +1,4 @@
-package hubtwork.study.springmvc.servlets.data
+package hubtwork.study.springmvc.data
 
 data class User(
    val username: String,

@@ -1,4 +1,4 @@
-package hubtwork.study.springmvc.servlets.util
+package hubtwork.study.springmvc.basics.util
 
 import org.springframework.util.StreamUtils
 import java.nio.charset.StandardCharsets

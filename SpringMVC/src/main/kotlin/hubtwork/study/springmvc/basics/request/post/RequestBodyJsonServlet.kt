@@ -1,8 +1,7 @@
-package hubtwork.study.springmvc.servlets.request.post
+package hubtwork.study.springmvc.basics.request.post
 
-import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
-import hubtwork.study.springmvc.servlets.data.User
+import hubtwork.study.springmvc.data.User
 import org.springframework.util.StreamUtils
 import java.nio.charset.StandardCharsets
 import javax.servlet.annotation.WebServlet

@@ -1,4 +1,4 @@
-package hubtwork.study.springmvc.servlets
+package hubtwork.study.springmvc.basics
 
 import javax.servlet.annotation.WebServlet
 import javax.servlet.http.HttpServlet

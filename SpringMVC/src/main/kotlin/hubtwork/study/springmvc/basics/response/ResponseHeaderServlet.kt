@@ -1,4 +1,4 @@
-package hubtwork.study.springmvc.servlets.response
+package hubtwork.study.springmvc.basics.response
 
 import javax.servlet.annotation.WebServlet
 import javax.servlet.http.Cookie

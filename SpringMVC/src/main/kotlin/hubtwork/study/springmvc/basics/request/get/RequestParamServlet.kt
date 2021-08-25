@@ -1,6 +1,6 @@
-package hubtwork.study.springmvc.servlets.request.get
+package hubtwork.study.springmvc.basics.request.get
 
-import hubtwork.study.springmvc.servlets.util.HttpRequestUtil.printParameters
+import hubtwork.study.springmvc.basics.util.HttpRequestUtil.printParameters
 import javax.servlet.annotation.WebServlet
 import javax.servlet.http.HttpServlet
 import javax.servlet.http.HttpServletRequest

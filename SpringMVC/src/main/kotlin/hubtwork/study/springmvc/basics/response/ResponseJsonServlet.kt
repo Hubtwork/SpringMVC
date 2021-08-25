@@ -1,7 +1,7 @@
-package hubtwork.study.springmvc.servlets.response
+package hubtwork.study.springmvc.basics.response
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
-import hubtwork.study.springmvc.servlets.data.User
+import hubtwork.study.springmvc.data.User
 import javax.servlet.annotation.WebServlet
 import javax.servlet.http.HttpServlet
 import javax.servlet.http.HttpServletRequest
