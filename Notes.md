@@ -188,4 +188,34 @@
 
 
 
- 
+ #### TIP 
+
+- **Preference > Build Tools > Gradle** 의 주체를 `Gradle` 대신 `Intelli J` 로 하면 속도가 좀 더 빠름
+
+
+
+---
+
+
+
+### Annotations
+
+- `@ServletComponentScan`
+  - 패키지 내의 Servlet 을 검색, 등록해줌
+
+
+
+---
+
+
+
+## Servlet
+
+#### HttpServletRequest
+
+- `getParameter` - 
+
+#### HttpServletResponse
+
+-  
+
