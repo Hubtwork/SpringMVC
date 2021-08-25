@@ -1,4 +1,4 @@
-package hubtwork.study.springmvc.controllers
+package hubtwork.study.springmvc.web.frontcontroller.v1
 
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
