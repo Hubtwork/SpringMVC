@@ -1,4 +1,4 @@
-package hubtwork.study.springmvc.servlet
+package hubtwork.study.springmvc.web.servlet
 
 import hubtwork.study.springmvc.repository.MemberRepository
 import javax.servlet.annotation.WebServlet
