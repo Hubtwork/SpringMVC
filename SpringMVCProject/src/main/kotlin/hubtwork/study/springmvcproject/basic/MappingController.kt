@@ -1,9 +1,7 @@
 package hubtwork.study.springmvcproject.basic
 
 import org.slf4j.LoggerFactory
-import org.springframework.web.bind.annotation.PathVariable
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @RestController
 class MappingController {
@@ -42,4 +40,29 @@ class MappingController {
         logger.info("Get Request with PathVariable $user in $group")
         return "successful Get Request, \n Hi. $user [ Group : $group ]"
     }
+
+    /**
+     * @GetMapping
+     * - headers : 특정 Http Header 매핑
+     * - consumes : Content-Type 매핑
+     * - produces : Header-Accept 매핑 / if not-matched ? return 406 ( Not Acceptable )
+     */
+    @GetMapping("/mapping-header", headers = ["mode=debug"])
+    fun mappingHeader() : String {
+        logger.info("mappingHeader")
+        return "Successful request with specific HTTP HEADER"
+    }
+
+    @PostMapping("/mapping-consume", consumes = ["application/json"])
+    fun mappingConsumes() : String {
+        logger.info("mappingConsume")
+        return "Successful request with JSON"
+    }
+
+    @PostMapping("/mapping-produce", produces = ["text/html"])
+    fun mappingProduces() : String {
+        logger.info("mappingProduce")
+        return "Successful request with Accept-HTML"
+    }
+
 }
