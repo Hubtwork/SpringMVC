@@ -1,7 +1,14 @@
 package hubtwork.study.itemservice.repository
 
 import hubtwork.study.itemservice.model.Item
+import org.springframework.stereotype.Repository
 
+/**
+ * @Repository
+ * -
+ *
+ */
+@Repository
 class ItemRepository {
     companion object {
         private var store: MutableMap<Long, Item> = HashMap()
